@@ -22,11 +22,14 @@ public class UserInfo implements Serializable{
 	@Column(name = "name", nullable = false)
 	private String name;
 	
+	@Column(name = "alias")
+	private String alias;
+	
 	@Column(name = "password", nullable = false)
 	private String password;
 	
-	@Column(name = "scot", nullable = false)
-	private Long scot;
+	@Column(name = "score", nullable = false)
+	private Long score;
 	
 	@Column(name = "createTime", nullable = false)
 	private String createTime;
@@ -56,11 +59,19 @@ public class UserInfo implements Serializable{
 	}
 
 	public long getScot() {
-		return scot;
+		return score;
 	}
 
-	public void setScot(long scot) {
-		this.scot = scot;
+	public void setScot(long score) {
+		this.score = score;
+	}
+
+	public String getAlias() {
+		return alias;
+	}
+
+	public void setAlias(String alias) {
+		this.alias = alias;
 	}
 
 	public String getCreateTime() {
