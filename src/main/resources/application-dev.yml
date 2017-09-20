@@ -1,0 +1,5 @@
+server:
+  port: 8080
+  
+logging:
+  path: D:/Spring/code/TestBoot/log
