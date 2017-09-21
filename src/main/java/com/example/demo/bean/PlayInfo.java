@@ -26,10 +26,17 @@ public class PlayInfo implements Serializable{
 	private String nameB;
 	
 	@Column(name="roundCount", nullable=false)
-	private Long roundCount;
+	private Integer roundCount;
 	
 	@Column(name="roundDetail", nullable=false)
 	private String roundDetail;
+	
+	public PlayInfo(String nameA,String nameB) {
+		this.nameA=nameA;
+		this.nameB=nameB;
+		roundCount= 0;
+		roundDetail="";
+	}
 
 	public Long getId() {
 		return id;
@@ -55,11 +62,11 @@ public class PlayInfo implements Serializable{
 		this.nameB = nameB;
 	}
 
-	public long getRoundCount() {
+	public int getRoundCount() {
 		return roundCount;
 	}
 
-	public void setRoundCount(long roundCount) {
+	public void setRoundCount(int roundCount) {
 		this.roundCount = roundCount;
 	}
 

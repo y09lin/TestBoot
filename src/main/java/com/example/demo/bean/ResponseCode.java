@@ -16,6 +16,6 @@ public class ResponseCode {
 	//
 	public static final String ERROR_PLAY_SAVE="e_p_1";
 	
-	public static final String MSG_PLAY_SAVE_SUCCESS="这一局已经保存成功";
-	public static final String MSG_PLAY_SAVE_ERROR="这一局已经保存是吧";
+	public static final String MSG_PLAY_START_SUCCESS="成功进入游戏";
+	public static final String MSG_PLAY_SAVE_ERROR="这一局已经保存失败";
 }

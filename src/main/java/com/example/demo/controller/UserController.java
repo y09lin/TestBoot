@@ -31,6 +31,7 @@ public class UserController {
 		}
 		user=new UserInfo();
 		user.setName(name);
+		user.setAlias("");
 		user.setPassword(password);
 		user.setScot(0);
 		user.setCreateTime(System.currentTimeMillis()+"");

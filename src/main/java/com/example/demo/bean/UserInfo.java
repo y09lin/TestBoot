@@ -81,6 +81,4 @@ public class UserInfo implements Serializable{
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
-	
-	
 }
