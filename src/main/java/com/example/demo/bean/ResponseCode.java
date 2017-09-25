@@ -9,6 +9,7 @@ public class ResponseCode {
 	
 	public static final String MSG_USER_CREATE_SUCCESS="用户申请成功";
 	public static final String MSG_USER_GET_SUCCESS="获取用户成功";
+	public static final String MSG_USER_UPDATE_SUCCESS="获取用户成功";
 	public static final String MSG_USER_EXIST="该用户名已经被申请了";
 	public static final String MSG_USER_NOT_EXIST="该用户名还未注册";
 	public static final String MSG_USER_ILLEGAL="该用户名或密码错误";

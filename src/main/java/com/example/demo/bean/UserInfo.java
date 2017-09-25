@@ -33,9 +33,31 @@ public class UserInfo implements Serializable{
 	
 	@Column(name = "createTime", nullable = false)
 	private String createTime;
+	
+	@Column(name = "challenge", nullable = false)
+	private Long challenge;
+	
+	@Column(name = "against", nullable = false)
+	private Long against;
 
 	public Long getId() {
 		return id;
+	}
+
+	public Long getChallenge() {
+		return challenge;
+	}
+
+	public void setChallenge(Long challenge) {
+		this.challenge = challenge;
+	}
+
+	public Long getAgainst() {
+		return against;
+	}
+
+	public void setAgainst(Long against) {
+		this.against = against;
 	}
 
 	public void setId(Long id) {
@@ -58,11 +80,11 @@ public class UserInfo implements Serializable{
 		this.password = password;
 	}
 
-	public long getScot() {
+	public Long getScore() {
 		return score;
 	}
 
-	public void setScot(long score) {
+	public void setScore(Long score) {
 		this.score = score;
 	}
 
